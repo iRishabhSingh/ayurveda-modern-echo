@@ -8,47 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Ayurvedic Color Palette */
-    --background: 36 43% 97%;
-    --foreground: 25 25% 15%;
+    /* Minimal Professional Palette - Clean & Modern */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 25 25% 15%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 25% 15%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Deep herbal green - primary brand color */
-    --primary: 149 70% 20%;
-    --primary-foreground: 36 43% 97%;
+    /* Deep forest green - minimal accent */
+    --primary: 149 45% 35%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Saffron gold accent */
-    --secondary: 30 100% 60%;
-    --secondary-foreground: 25 25% 15%;
+    /* Subtle warm accent */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
 
-    /* Soft earth tones */
-    --muted: 36 30% 90%;
-    --muted-foreground: 25 15% 45%;
+    /* Neutral grays */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    /* Warm terracotta accent */
-    --accent: 15 60% 55%;
-    --accent-foreground: 36 43% 97%;
+    /* Minimal accent color */
+    --accent: 149 45% 35%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 36 20% 88%;
-    --input: 36 20% 88%;
-    --ring: 149 70% 20%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 149 45% 35%;
 
-    --radius: 0.75rem;
+    --radius: 0.25rem;
     
-    /* Custom Ayurvedic tokens */
-    --herbal: 149 70% 20%;
-    --saffron: 30 100% 60%;
-    --earth: 15 60% 55%;
-    --cream: 36 43% 97%;
-    --sage: 140 20% 60%;
+    /* Custom minimal tokens */
+    --herbal: 149 45% 35%;
+    --cream: 0 0% 100%;
+    --sage: 0 0% 60%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -68,48 +66,46 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 149 30% 8%;
-    --foreground: 36 43% 97%;
+    --background: 0 0% 10%;
+    --foreground: 0 0% 95%;
 
-    --card: 149 25% 12%;
-    --card-foreground: 36 43% 97%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 149 25% 12%;
-    --popover-foreground: 36 43% 97%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 30 100% 60%;
-    --primary-foreground: 25 25% 15%;
+    --primary: 149 45% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 149 40% 25%;
-    --secondary-foreground: 36 43% 97%;
+    --secondary: 0 0% 18%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 149 20% 20%;
-    --muted-foreground: 36 20% 65%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 15 60% 55%;
-    --accent-foreground: 36 43% 97%;
+    --accent: 149 45% 45%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 36 43% 97%;
+    --destructive: 0 62.8% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 149 20% 20%;
-    --input: 149 20% 20%;
-    --ring: 30 100% 60%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 149 45% 45%;
     
-    --sidebar-background: 149 30% 8%;
-    --sidebar-foreground: 36 43% 97%;
-    --sidebar-primary: 30 100% 60%;
-    --sidebar-primary-foreground: 25 25% 15%;
-    --sidebar-accent: 149 20% 20%;
-    --sidebar-accent-foreground: 36 43% 97%;
-    --sidebar-border: 149 20% 20%;
-    --sidebar-ring: 30 100% 60%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 149 45% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 18%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 149 45% 45%;
     
-    --herbal: 149 70% 20%;
-    --saffron: 30 100% 60%;
-    --earth: 15 60% 55%;
-    --cream: 149 30% 8%;
-    --sage: 140 20% 40%;
+    --herbal: 149 45% 45%;
+    --cream: 0 0% 10%;
+    --sage: 0 0% 40%;
   }
 }
 

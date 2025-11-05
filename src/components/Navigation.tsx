@@ -28,7 +28,7 @@ const Navigation = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-md"
+          ? "bg-background/95 backdrop-blur-sm border-b border-border"
           : "bg-transparent"
       }`}
     >
@@ -36,12 +36,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Leaf className="w-6 h-6 text-primary-foreground" />
+            <div className="w-8 h-8 border border-foreground flex items-center justify-center group-hover:bg-foreground transition-colors">
+              <Leaf className="w-5 h-5 text-foreground group-hover:text-background transition-colors" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">Kamleshwar</h1>
-              <p className="text-xs text-muted-foreground">Ayurvedic Pharmacy</p>
+              <h1 className="text-lg font-normal text-foreground tracking-tight">Kamleshwar</h1>
             </div>
           </Link>
 
@@ -51,15 +50,16 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className="text-foreground hover:text-primary transition-colors font-medium relative group"
+                className="text-sm text-foreground hover:text-primary transition-colors font-normal"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              Order Now
-            </Button>
+            <Link to="/contact">
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground h-9 px-6 text-sm font-normal">
+                Order Now
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -67,7 +67,7 @@ const Navigation = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden p-2 text-foreground"
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>
@@ -87,14 +87,16 @@ const Navigation = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-foreground hover:text-primary transition-colors font-medium py-2"
+                  className="text-sm text-foreground hover:text-primary transition-colors font-normal py-2"
                 >
                   {link.name}
                 </Link>
               ))}
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                Order Now
-              </Button>
+              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full font-normal">
+                  Order Now
+                </Button>
+              </Link>
             </div>
           </motion.div>
         )}

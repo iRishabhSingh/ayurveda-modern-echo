@@ -48,8 +48,6 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         herbal: "hsl(var(--herbal))",
-        saffron: "hsl(var(--saffron))",
-        earth: "hsl(var(--earth))",
         cream: "hsl(var(--cream))",
         sage: "hsl(var(--sage))",
         sidebar: {
